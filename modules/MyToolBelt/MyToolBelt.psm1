@@ -43,15 +43,15 @@ function Get-MytbServerList {
     Gets my server list.
 
     .DESCRIPTION
-    Gets the list of QA servers from User environment variable named MytbServerList.
+    Gets the list of servers from User environment variable named MytbServerList.
 
     .EXAMPLE 
     Get-MytbServerList
-    Gets the list of QA servers from User environment variable named MytbServerList.
+    Gets the list of servers from User environment variable named MytbServerList.
 
     .EXAMPLE
     Get-MytbServerList | Get-MytbLastBootTime
-    Pipes list of QA servers to Get-MytbLastBootTime to see last boot time for each QA server.
+    Pipes list of servers to Get-MytbLastBootTime to see last boot time for each server.
 
     .NOTES
     The variable is used to save time spent typing out server names.
@@ -81,7 +81,7 @@ function Get-MytbLastBootTime {
 
     .EXAMPLE
     Get-MytbServerList | Get-MytbLastBootTime
-    Pipe list of my servers to Get-MytbLastBootTime to see last boot time for each QA server.
+    Pipe list of my servers to Get-MytbLastBootTime to see last boot time for each server.
     #>
 
     param(
